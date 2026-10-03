@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html>
+<head><title>Test</title></head>
+<body>
+<div id=" log\></div>
+<script>
+window.onerror = function(msg, url, line, col, err) {
+ document.getElementById('log').innerText += 'ERROR: ' + msg + ' at line ' + line + ' col ' + col + '\n' + (err ? err.stack : '');
+};
+</script>
+<script src=\js/app.bundle.js\></script>
+<script>
+if (!document.getElementById('log').innerText) {
+ document.getElementById('log').innerText = 'LOADED SUCCESSFULLY! window.store: ' + typeof window.store;
+}
+</script>
+</body>
+</html>

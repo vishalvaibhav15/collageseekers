@@ -1,0 +1,6 @@
+param()
+$req = [System.Net.WebRequest]::Create('http://localhost:5173/')
+$res = $req.GetResponse()
+Write-Host ("Server Status: " + $res.StatusCode + " (" + [int]$res.StatusCode + ")")
+Write-Host ("Content Length: " + $res.ContentLength + " bytes")
+$res.Close()

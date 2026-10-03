@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head><meta charset=" UTF-8\></head>
+<body>
+<pre id=\out\></pre>
+<script>
+window.addEventListener('error', function(e) {
+ document.getElementById('out').innerText += 'ERR: ' + e.message + ' at line ' + e.lineno + '\n';
+});
+</script>
+<script src=\http://127.0.0.1:8080/js/lucide.js\></script>
+<script src=\http://127.0.0.1:8080/js/tailwind.js\></script>
+<div id=\app\></div>
+<script src=\http://127.0.0.1:8080/js/app.bundle.js\></script>
+<script>
+setTimeout(function() {
+ var app = document.getElementById('app');
+ var out = document.getElementById('out');
+ out.innerText += 'APP_MOUNTED: ' + (app && app.children.length > 0) + ' children: ' + (app ? app.children.length : 0);
+}, 1000);
+</script>
+</body>
+</html>

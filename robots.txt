@@ -1,0 +1,11 @@
+﻿User-agent: *
+Allow: /
+Disallow: /#login
+Disallow: /#register
+Disallow: /#admin-portal
+Disallow: /#institution-portal
+Disallow: /#advertiser-portal
+Disallow: /#business-portal
+
+# Sitemap
+Sitemap: https://collegeseekers.com/sitemap.xml
