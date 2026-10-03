@@ -1,0 +1,12 @@
+{
+  "name": "collageseekers",
+  "version": "1.0.0",
+  "description": "CollegeSeekers.com - Student journey platform",
+  "private": true,
+  "scripts": {
+    "test": "echo \"No tests specified\""
+  },
+  "dependencies": {
+    "@vercel/speed-insights": "^1.0.12"
+  }
+}
